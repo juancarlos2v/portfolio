@@ -1,0 +1,103 @@
+#app {
+    /* background-image: url('../imagenes/cielo-1.jpg'); */
+    background-image: url('../imagenes/cielo-2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 60rem;
+}
+
+nav {
+    margin: auto;
+    padding: 2rem;
+    left: 0;
+    right: 0;
+    border-bottom: 0.1rem solid white;
+    /* position: fixed; */
+}
+
+nav a {
+    color: var(--fuente);
+    padding-right: 3rem;
+    font-weight: 900;
+    font-size: 2.5vh;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.contenedor-info {
+    display: flex;
+    padding-top: 3rem;
+}
+
+.presentacion {
+    width: 50%;
+}
+
+.proyectos {
+    width: 50%;
+}
+
+.presentacion>div:first-child {
+    background-color: var(--caja-transparente);
+    color: white;
+    padding: 3rem;
+}
+
+.presentacion>div:first-child h1 {
+    font-size: 10vh;
+    margin: 0;
+}
+
+.presentacion>div:first-child p {
+    font-size: 2.9vh;
+    margin: 0;
+}
+
+.presentacion>div+div {
+    margin-top: 3rem;
+}
+
+.presentacion>div+div>h3 {
+    color: white;
+    font-size: 4vh;
+    font-weight: 600;
+    padding: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    /* background-color: var(--caja-transparente); */
+}
+
+
+/*****LOGO HABILIDADES****/
+
+.contenedor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    padding-left: 3rem;
+}
+
+.contenedor-logos>div {
+    height: 4rem;
+    width: 4rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    background-size: contain;
+}
+
+
+/*************************/
+
+.proyectos {
+    padding: 3rem;
+    width: 50%;
+}
+
+.titulos {
+    display: flex;
+    justify-content: space-around;
+}

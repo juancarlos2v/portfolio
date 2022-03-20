@@ -1,0 +1,24 @@
+body,
+html {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+:root {
+    --fuente: #323b57;
+    --caja-transparente: #323b576c;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
