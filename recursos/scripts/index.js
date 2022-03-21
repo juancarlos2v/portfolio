@@ -6,12 +6,25 @@ let app = new Vue({
         ],
         arq: false,
         web: false
-
-
+    },
+    mounted() {
+        btnWeb = document.querySelector('.botton-web');
+        btnArq = document.querySelector('.botton-arq');
     },
     methods: {
-        name() {
-
+        eleccion(campo) {
+            if (campo == 'web') {
+                this.web = true;
+                this.arq = false;
+                btnArq.classList.add('tachado')
+                btnWeb.classList.remove('tachado')
+            }
+            if (campo == 'arq') {
+                this.web = false;
+                this.arq = true;
+                btnWeb.classList.add('tachado')
+                btnArq.classList.remove('tachado')
+            }
         }
     },
 })

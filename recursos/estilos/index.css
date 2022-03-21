@@ -2,9 +2,9 @@
     /* background-image: url('../imagenes/cielo-1.jpg'); */
     background-image: url('../imagenes/cielo-2.jpg');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 60rem;
+    height: auto;
 }
 
 nav {
@@ -77,8 +77,9 @@ nav a:hover {
 .contenedor-logos {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding-left: 3rem;
+    padding-bottom: 4rem;
 }
 
 .contenedor-logos>div {
@@ -99,5 +100,53 @@ nav a:hover {
 
 .titulos {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.titulos button {
+    display: flex;
+    align-items: flex-end;
+    color: var(--fuente);
+    font-weight: bold;
+    font-size: 4vh;
+}
+
+.titulos button:hover {
+    color: white;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--fuente);
+    margin-top: 3rem;
+}
+
+.lista-arq {
+    align-items: flex-end;
+}
+
+.lista button {
+    margin-bottom: 1.5rem;
+    color: var(--fuente);
+    font-weight: 700;
+    font-size: 3vh;
+}
+
+.lista button:hover {
+    color: white;
+}
+
+
+/*****************************/
+
+.tachado {
+    text-decoration: line-through;
+    color: white !important;
+}
+
+.tachado:hover {
+    text-decoration: none;
+    color: var(--fuente) !important;
 }
