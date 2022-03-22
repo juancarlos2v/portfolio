@@ -17,8 +17,8 @@
 </head>
 
 <body>
-    <div class="contenedor-total">
-        <div id="app">
+    <div id="app">
+        <div class="contenedor-total">
             <header>
                 <nav>
                     <a href="#/">Sobre mi</a>
@@ -49,10 +49,10 @@
                             <button type="button" class="botton-arq" @click="eleccion('arq')">Arquitectura</button>
                         </div>
                         <div class="lista" v-show="web==true ">
-                            <button type="button ">> Mighty Ducks Hockey League </button>
-                            <button type="button ">> Congreso 103</button>
-                            <button type="button ">> Homebanking</button>
-                            <button type="button ">> Duo Danza Club</button>
+                            <button type="button " @click="abrirProyecto('hockey')"> Mighty Ducks Hockey League </button>
+                            <button type="button " @click="abrirProyecto('congreso')">Congreso 103</button>
+                            <button type="button " @click="abrirProyecto('banco')"> Homebanking</button>
+                            <button type="button " @click="abrirProyecto('danza')"> Duo Danza Club</button>
                         </div>
                         <div class="lista lista-arq" v-show="arq==true ">
                             <button type="button ">EternitHaus</button>
@@ -68,7 +68,76 @@
             </footer>
         </div>
         <template>
-
+            <transition name="fade">
+                <section class="modal" v-show="banco==true">
+                    <div class="contenedor-modal contenedor-proyecto">
+                        
+                            <img class="img-fluid" src="./recursos/imagenes/homebanking.png">
+                        
+                        <div class="descripcion-proyecto">
+                            <h5>HOMEBANKING MINDHUB</h5>
+                            <p>Proyecto para bootcamp Mindhub. Homebanking que nos permite el acceso y registro de nuevos usuario, dentro de la misma se podra crear cuentas, tarjetas y solicitar prestamos, ademas de realizar pago de servicios.</p>
+                        </div>
+                        <div>
+                            <button type="button"> IR</button>
+                            <button type="button" @click="cerrarProyecto">VOLVER</button>
+                        </div>
+                    </div>
+                </section>
+            </transition>
+        </template>
+        <template>
+            <transition name="fade">
+                <section class="modal" v-show="hockey==true">
+                    <div class="contenedor-modal contenedor-proyecto">
+                        
+                            <img class="img-fluid" src="./recursos/imagenes/hockey.png">
+                        
+                        <div class="descripcion-proyecto">
+                            <h5>Mighty Ducks Hockey League</h5>
+                            <p>Mi primera sitio web. Pagina desarrollada para Mighty Ducks Hockey League, donde se puede encontrar informacion sobre el deporte, proximos juegos, reglas y contacto por medio de un registro.</p>
+                        </div>
+                        <div>
+                            <button type="button"> IR</button>
+                            <button type="button" @click="cerrarProyecto">VOLVER</button>
+                        </div>
+                    </div>
+                </section>
+            </transition>
+        </template>
+        <template>
+            <transition name="fade">
+                <section class="modal" v-show="senado==true">
+                    <div class="contenedor-modal contenedor-proyecto">   
+                            <img class="img-fluid" src="./recursos/imagenes/senadores.png">
+                        <div class="descripcion-proyecto">
+                            <h5>Congreso 113°</h5>
+                            <p>Consultora Data Insight Group analiza los datos del 113° Congreso de los Estados Unidos. Los datos que podemos ir filtrando es elegiendo el partido y/o estado de los miembros, por otro lado se cuenta con una tabla con el porcentaje de votos efectuados, faltas y lealtad al partido.</p>
+                        </div>
+                        <div>
+                            <button type="button"> IR</button>
+                            <button type="button" @click="cerrarProyecto">VOLVER</button>
+                        </div>
+                    </div>
+                </section>
+            </transition>
+        </template>
+        <template>
+            <transition name="fade">
+                <section class="modal" v-show="danza==true">
+                    <div class="contenedor-modal contenedor-proyecto">   
+                            <img class="img-fluid" src="./recursos/imagenes/duo.png">
+                        <div class="descripcion-proyecto">
+                            <h5>DUO DANZA CLUB</h5>
+                            <p>Proyecto final para bootcamp Mindhub. Duo Danza Club nace de una necesidad real en el mundo del baile, ademas de contar con un e-commerce, esta aplicacion se enfoca en la busqueda de parejas para tomar clases de baile de diferentes estilos, en ella podemos encontrar tambien distintas secciones, como informacion de festivales y tienda online.</p>
+                        </div>
+                        <div>
+                            <button type="button"> IR</button>
+                            <button type="button" @click="cerrarProyecto">VOLVER</button>
+                        </div>
+                    </div>
+                </section>
+            </transition>
         </template>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>

@@ -131,11 +131,47 @@ nav a:hover {
     margin-bottom: 1.5rem;
     color: var(--fuente);
     font-weight: 700;
-    font-size: 3vh;
+    font-size: 2.5vh;
 }
 
 .lista button:hover {
     color: white;
+}
+
+
+/**************MODAL***/
+
+.contenedor-proyecto {
+    background-color: var(--fuente);
+    /* background-color: black; */
+}
+
+.contenedor-proyecto>div+div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.descripcion-proyecto {
+    margin-top: 1rem;
+    color: white;
+}
+
+.descripcion-proyecto>h5 {
+    font-weight: bold;
+}
+
+.contenedor-proyecto button {
+    color: var(--fuente);
+    font-weight: bold;
+    padding: 0.5rem;
+    background-color: white;
+    margin-right: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.contenedor-proyecto button:hover {
+    color: white;
+    background-color: var(--fuente);
 }
 
 
