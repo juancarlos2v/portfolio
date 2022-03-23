@@ -9,7 +9,7 @@
 
 nav {
     margin: auto;
-    padding: 2rem;
+    padding: 1rem;
     left: 0;
     right: 0;
     border-bottom: 0.1rem solid white;
@@ -18,9 +18,13 @@ nav {
 
 nav a {
     color: var(--fuente);
-    padding-right: 3rem;
+    padding-right: 2rem;
     font-weight: 900;
     font-size: 2.5vh;
+}
+
+nav img {
+    width: 4%;
 }
 
 nav a:hover {
@@ -103,6 +107,19 @@ nav a:hover {
     justify-content: space-between;
 }
 
+.titulos>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.titulos>div+div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .titulos button {
     display: flex;
     align-items: flex-end;
@@ -123,8 +140,9 @@ nav a:hover {
     margin-top: 3rem;
 }
 
-.lista-arq {
-    align-items: flex-end;
+.lista-arq a {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .lista button {
@@ -160,7 +178,8 @@ nav a:hover {
     font-weight: bold;
 }
 
-.contenedor-proyecto button {
+.contenedor-proyecto button,
+.contenedor-proyecto a {
     color: var(--fuente);
     font-weight: bold;
     padding: 0.5rem;
@@ -169,7 +188,13 @@ nav a:hover {
     border-radius: 0.3rem;
 }
 
-.contenedor-proyecto button:hover {
+.contenedor-proyecto a {
+    width: 3rem;
+    text-align: center;
+}
+
+.contenedor-proyecto button:hover,
+.contenedor-proyecto a:hover {
     color: white;
     background-color: var(--fuente);
 }
