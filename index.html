@@ -29,7 +29,7 @@
             <main>
                 <div class="contenedor-info">
                     <div class="presentacion">
-                        <div>
+                        <div data-aos="fade-right">
                             <h1>Hola</h1>
                             <p>mi nombre es Juan Carlos </p>
                             <p>programador Full Stack y estudiante de arquitectura.</p>
@@ -38,7 +38,7 @@
                             <h3>Habilidades</h3>
                             <div class="contenedor-logos">
                                 <div v-for="logo in logos">
-                                    <img class="img-fluid" :src="logo">
+                                    <img data-aos="zoom-in" class="img-fluid" :src="logo">
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                     <div class="proyectos">
                         <div class="titulos">
                             <div>
-                                <button type="button" class="botton-web" @click="eleccion('web')">Desarrollo web</button>
+                                <button data-aos="zoom-in-up" type="button" class="botton-web" @click="eleccion('web')">Desarrollo web</button>
 
                                 <div class="lista" v-show="web==true">
                                     <button type="button " @click="abrirProyecto('hockey')"> Mighty Ducks Hockey League </button>
@@ -57,7 +57,7 @@
 
                             </div>
                             <div>
-                                <button type="button" class="botton-arq" @click="eleccion('arq')">Arquitectura</button>
+                                <button data-aos="zoom-in-up" type="button" class="botton-arq" @click="eleccion('arq')">Arquitectura</button>
                                 <template>
                                     <div class="lista lista-arq" v-show="arq==true ">
                                         <!-- <button type="button ">EternitHaus</button>
