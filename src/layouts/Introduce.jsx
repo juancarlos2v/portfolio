@@ -1,20 +1,37 @@
-import style from "@styles/introduce.module.scss"
-
 const Introduce = () => {
-
+    let gretting = "<>HOLA MUNDO</>"
     return (
         <>
-            <div className="d-flex min-vh-100" >
-                <div className={style['title']}>
-                    <h1>Desarrollador</h1>
-                    <h1> Full Stack</h1>
-                    <button type="button">Contactame</button>
+            <div >
+                <div>
+                    <p className="text-light"> {gretting} </p>
+                    <p className="title">Me llamo Juan Carlos</p>
+                    <p className="title">Desarrollador Full Stack</p>
+                    <button>CONTACTAME</button>
                 </div>
-                <div className={style['me']} >
-                    <h3>Juan C. Vilcherrez</h3>
-                    <div className={style.img} ></div>
+                <div className="avatar">
+
                 </div>
-            </div >
+                <div className="footer">
+                    <p className="text-footer">juanc.vilcherrez@gmail.com</p>
+                    <div>
+                        <a href="https://www.github.com/juancarlos2v">Github</a>
+                        <a href="https://www.linkedin.com/juancarlos-vilcherrez">Linkedin</a>
+                    </div>
+                </div>
+                <style jsx>{`
+                
+                .footer{
+                    display:flex;
+                    justify-content:space-between   
+                }
+                .footer>div{
+                    display:flex;
+                    justify-content:space-between;
+                }
+                `}</style>
+            </div>
+
         </>
     )
 
