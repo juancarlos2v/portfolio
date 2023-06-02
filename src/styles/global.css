@@ -7,12 +7,12 @@
   --black: #090909;
 }
 body {
-  padding: 4rem 4rem 4rem 4rem;
   background-image: url("../../public/background.jpg");
 }
 p {
   margin: 0 !important;
 }
+h1,
 button,
 input,
 optgroup,
@@ -21,6 +21,7 @@ textarea,
 p,
 a {
   font-family: "IBM Plex Mono", monospace;
+  margin: 0;
 }
 
 a:link,
@@ -31,9 +32,11 @@ a:active {
 }
 button {
   background-color: transparent;
-  border: solid var(--white);
   color: var(--white);
   padding: 0.5rem;
+  margin-top: 2rem;
+  border-style: none;
+  cursor: pointer;
 }
 
 .title {
@@ -47,6 +50,6 @@ button {
 }
 
 .text-light {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--black-light);
 }
