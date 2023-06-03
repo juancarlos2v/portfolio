@@ -18,6 +18,14 @@ const AboutMe = () => {
                 <button type="button" className="text-light">ES</button>
                 <p>02</p>
             </div>
+            <style jsx>{`
+                
+                    .contenedor-page{
+                        
+                    scroll-snap-align: start;
+                    }
+                
+            `} </style>
 
         </div>
     )

@@ -58,6 +58,7 @@ const Introduce = () => {
                     flex-direction:column;
                     justify-content: space-between;
                     height:100vh;
+                    scroll-snap-align: start;
                 }
                 .container-me{
                     display:flex;
