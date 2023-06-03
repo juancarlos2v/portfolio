@@ -39,6 +39,11 @@ button {
   cursor: pointer;
 }
 
+.contenedor-page {
+  margin: 0 200px 0 200px;
+  height: 100vh;
+}
+
 .title {
   font-size: 38px;
   color: var(--white);
@@ -47,6 +52,10 @@ button {
 .text-footer {
   font-size: 18px;
   color: var(--white-two);
+}
+.text {
+  font-size: 20px;
+  color: var(--white);
 }
 
 .text-light {

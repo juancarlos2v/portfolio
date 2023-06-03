@@ -58,7 +58,6 @@ const Introduce = () => {
                     flex-direction:column;
                     justify-content: space-between;
                     height:100vh;
-                    padding: 0rem 100px 0rem 100px;
                 }
                 .container-me{
                     display:flex;
