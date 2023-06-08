@@ -37,9 +37,7 @@ const Introduce = () => {
                 nav>button{
                     color:var(--black-light)
                 }
-                .btn-contact{                  
-                    border: solid var(--white);
-                }
+                
                 .text-light{
                     margin-bottom:1rem !important
                 }
@@ -58,6 +56,7 @@ const Introduce = () => {
                     flex-direction:column;
                     justify-content: space-between;
                     height:100vh;
+                    scroll-behavior: smooth;
                     scroll-snap-align: start;
                 }
                 .container-me{
