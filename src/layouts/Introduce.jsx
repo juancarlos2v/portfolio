@@ -1,30 +1,32 @@
+import Nav from "@components/Nav";
+import SectionLink from "@components/SectionLink";
+
 const Introduce = () => {
     let gretting = "<>HOLA MUNDO</>"
     return (
         <>
-            <div className="container">
-                <nav>
-                    <button type="button">X </button>
-                    <button type="button">ES</button>
-                </nav>
+            <div className="container col-12">
+                <Nav />
 
-                <div className="container-me">
-                    <div>
+                <div className="d-flex justify-content-lg-between align-items-center ">
+                    <div  >
                         <p className="text-light"> {gretting} </p>
                         <p className="title">Me llamo Juan Carlos</p>
                         <p className="title">Desarrollador Full Stack</p>
-                        <button className="btn-contact" type="button">CONTACTAME</button>
+                        <div className="btn-contact">
+                            <SectionLink to="contact">CONTACTAME</SectionLink>
+                        </div>
                     </div>
                     <div className="avatar">
 
                     </div>
                 </div>
 
-                <div className="footer">
-                    <p className="text-footer">juanc.vilcherrez@gmail.com</p>
-                    <div>
-                        <a href="https://www.github.com/juancarlos2v">Github</a>
-                        <a href="https://www.linkedin.com/juancarlos-vilcherrez">Linkedin</a>
+                <div className="footer d-flex justify-content-between align-items-center flex-wrap">
+                    <p className="text-footer col-lg-6 col-md-12">juanc.vilcherrez@gmail.com</p>
+                    <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-between">
+                        <a target="_blank" href="https://www.github.com/juancarlos2v">Github</a>
+                        <a target="_blank" href="https://www.linkedin.com/in/juancarlos-vilcherrez/">Linkedin</a>
                     </div>
                 </div>
                 <style jsx>{`
@@ -41,39 +43,10 @@ const Introduce = () => {
                 .text-light{
                     margin-bottom:1rem !important
                 }
-                .footer{
-                    display:flex;
-                    justify-content:space-between;
-                    padding-bottom:10px
-                }
-                .footer>div{
-                    display:flex;
-                    justify-content:space-between;
-                    width:20%
-                }
-                .container{
-                    display:flex;
-                    flex-direction:column;
-                    justify-content: space-between;
-                    height:100vh;
-                    scroll-behavior: smooth;
-                    scroll-snap-align: start;
-                }
-                .container-me{
-                    display:flex;
-                    justify-content:space-between;
-                    flex-wrap:wrap
-                }
-                .avatar{
-                    width: 150px;
-                    height: 150px;
-                    -moz-border-radius: 50%;
-                    -webkit-border-radius: 50%;
-                    border-radius: 50%;
-                    background: var(--black-light);
-                }
+
+                
                 `}</style>
-            </div>
+            </div >
 
         </>
     )
