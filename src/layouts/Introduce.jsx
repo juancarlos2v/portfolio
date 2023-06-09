@@ -17,12 +17,10 @@ const Introduce = () => {
                             <SectionLink to="contact">CONTACTAME</SectionLink>
                         </div>
                     </div>
-                    <div className="avatar">
-
-                    </div>
+                    <div className="avatar" ></div>
                 </div>
 
-                <div className="footer d-flex justify-content-between align-items-center flex-wrap">
+                <div className="footer d-flex align-items-center flex-wrap">
                     <p className="text-footer col-lg-6 col-md-12">juanc.vilcherrez@gmail.com</p>
                     <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-between">
                         <a target="_blank" href="https://www.github.com/juancarlos2v">Github</a>
