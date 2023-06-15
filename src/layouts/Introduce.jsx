@@ -9,7 +9,7 @@ const Introduce = () => {
                 <Nav />
 
                 <div className="d-flex justify-content-lg-between align-items-center ">
-                    <div  >
+                    <div >
                         <p className="text-light"> {gretting} </p>
                         <p className="title">Me llamo Juan Carlos</p>
                         <p className="title">Desarrollador Full Stack</p>
