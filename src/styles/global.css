@@ -115,6 +115,14 @@ button {
   justify-content: space-between;
   width: 20%;
 }
+/* .carousel-indicators {
+  display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+} */
 
 @media (max-width: 767px) {
   .container {

@@ -15,7 +15,7 @@ const ContactMe = () => {
                     <input className="col-lg-7" type="number" placeholder="Telefono" />
                     <input className="col-lg-7" type="text" placeholder="Mensaje" />
 
-                    <button type="button" className="btn-contact">ENVIAR</button>
+                    <button type="button" disabled="true" className="btn-contact">ENVIAR</button>
                 </div>
 
                 <div className="text-white d-flex flex-column col-lg-6 col-md-5 pt-lg-0 p-5 pb-0 order-lg-2 order-1  ">
