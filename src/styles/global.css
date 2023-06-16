@@ -7,12 +7,14 @@
   --black: #090909;
 }
 body {
-  padding: 4rem 4rem 4rem 4rem;
   background-image: url("../../public/background.jpg");
+  overflow-x: auto;
+  overflow-y: auto;
 }
 p {
-  margin: 0 !important;
+  margin-bottom: 0 !important;
 }
+h1,
 button,
 input,
 optgroup,
@@ -21,6 +23,25 @@ textarea,
 p,
 a {
   font-family: "IBM Plex Mono", monospace;
+  margin: 0;
+}
+a:hover {
+  color: var(--white) !important;
+}
+
+input {
+  margin-top: 25px !important;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border-bottom: var(--white) 1px solid;
+  color: var(--white);
+}
+input:focus {
+  outline: none;
 }
 
 a:link,
@@ -31,22 +52,88 @@ a:active {
 }
 button {
   background-color: transparent;
-  border: solid var(--white);
   color: var(--white);
   padding: 0.5rem;
+  margin-top: 2rem;
+  border-style: none;
+  cursor: pointer;
+}
+.avatar {
+  width: 15rem;
+  height: 15rem;
+  background-image: url("../../public/photo.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  margin: 2rem;
+}
+.photo {
+  background-image: url("https://picsum.photos/600/300?grayscale");
+  background-size: cover;
+  width: 15rem;
+  height: 300px;
+}
+.btn-contact {
+  border: solid var(--white) 0.1rem;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  color: var(--white);
+  cursor: pointer;
+  display: inline-block;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
 }
 
 .title {
   font-size: 38px;
   color: var(--white);
 }
+.text {
+  color: var(--white);
+}
+.text-black-light {
+  color: var(--black-light) !important;
+}
 
 .text-footer {
-  font-size: 18px;
   color: var(--white-two);
 }
 
-.text-light {
-  font-size: 14px;
-  color: var(--black-light);
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+.footer > div {
+  display: flex;
+  justify-content: space-between;
+  width: 20%;
+}
+/* .carousel-indicators {
+  display: none;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+} */
+
+@media (max-width: 767px) {
+  .container {
+    text-align: center;
+  }
+  .d-flex {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .avatar {
+    width: 10rem;
+    height: 10rem;
+  }
 }
