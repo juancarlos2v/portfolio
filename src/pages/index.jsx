@@ -7,11 +7,13 @@ import Skills from "@layouts/Skills"
 const index = () => {
     return (
         <>
+            <div className="bg"></div>
             <Introduce />
             <AboutMe />
             <Skills />
             <Projects />
             <ContactMe />
+
         </>
     )
 }
