@@ -5,11 +5,12 @@ const Introduce = () => {
     let gretting = "<>HOLA MUNDO</>"
     return (
         <>
+
             <div className="container col-12">
                 <Nav />
 
-                <div className="d-flex justify-content-lg-between align-items-center ">
-                    <div >
+                <div className=" d-flex justify-content-lg-between align-items-center ">
+                    <div className="typewriter">
                         <p className="text-light"> {gretting} </p>
                         <p className="title">Me llamo Juan Carlos</p>
                         <p className="title">Desarrollador Full Stack</p>
@@ -45,6 +46,7 @@ const Introduce = () => {
                 
                 `}</style>
             </div >
+
 
         </>
     )

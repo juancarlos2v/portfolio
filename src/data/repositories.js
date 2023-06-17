@@ -19,7 +19,7 @@ export const repositories = [
     name: "CourseChckr",
     description:
       "App desarrollada con Next.js dedicada a hacer un seguimiento de las materias cursadas y aprobadas en la carrera. Aunque aún está en etapa de desarrollo, la aplicación permitirá a los estudiantes registrar fácilmente las asignaturas, ver su progreso académico y acceder a recursos útiles.",
-    code: "https://duodanzaclub.up.railway.app/web/index.html",
+    code: "https://github.com/juancarlos2v/course-checkr",
     deploy: "#/",
     image: "course.png",
   },
@@ -42,7 +42,7 @@ export const repositories = [
   {
     name: "TanRandom Podcast",
     description:
-      "Web para el podcast 'Tan Random'. En esta plataforma en desarrollo, podrás encontrar noticias de espectáculo, cultura y mucho más. ",
+      "Web para el podcast 'Tan Random'. En esta plataforma en desarrollo, podrás encontrar noticias de espectáculo, cultura y mucho más.",
     code: "https://duodanzaclub.up.railway.app/web/index.html",
     deploy: "#/",
     image: "tanrandom.png",

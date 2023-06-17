@@ -6,11 +6,11 @@
   --black-light: #808080;
   --black: #090909;
 }
-body {
+/* body {
   background-image: url("../../public/background.jpg");
   overflow-x: auto;
   overflow-y: auto;
-}
+} */
 p {
   margin-bottom: 0 !important;
 }
@@ -88,6 +88,7 @@ button {
   height: 100vh;
   scroll-behavior: smooth;
   scroll-snap-align: start;
+  overflow-y: hidden;
 }
 
 .title {
