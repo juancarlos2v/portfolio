@@ -42,6 +42,15 @@ const Introduce = () => {
                 .text-light{
                     margin-bottom:1rem !important
                 }
+                .avatar {
+                    width: 15rem;
+                    height: 15rem;
+                    background-image: url("photo.jpg");
+                    background-size: cover;
+                    background-position: center;
+                    border-radius: 50%;
+                    margin: 2rem;
+                }
 
                 
                 `}</style>
