@@ -36,7 +36,7 @@ export const repositories = [
     description:
       "Web informativa para un equipo de hockey. El objetivo principal era proporcionar información sobre el equipo, incluyendo las fechas de los juegos, una sección de registro para nuevos jugadores, y detalles sobre las reglas del juego, entre otros aspectos relevantes.",
     code: "https://github.com/juancarlos2v/MightyDucksHockeyLeague",
-    deploy: "https://juancarlos2v.github.io/MightyDucksHockeyLeague/",
+    deploy: "https://mighty-ducks-psi.vercel.app",
     image: "hockey.png",
   },
   {
