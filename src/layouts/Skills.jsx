@@ -7,7 +7,7 @@ const Skills = () => {
     return (
         <div className="container">
             <Nav />
-            <div className="w-100 p-lg-0 p-5">
+            <div className="w-100 p-lg-0">
                 <h1 className="title">Mis Habilidades</h1>
                 <div className="skills d-flex text-white mt-4 flex-wrap">
                     <div >
