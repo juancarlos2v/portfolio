@@ -19,10 +19,11 @@ const Main = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     return (
-        <nav className={`blur d-flex justify-content-center ${scrolling ? 'scrolling' : ''}`}>
+        <nav className={`blur d-flex col-12 justify-content-center ${scrolling ? 'scrolling' : ''}`}>
             <div className=" main col-8 d-flex justify-content-between" >
-                <SectionLink to="start">INICIO</SectionLink>
+                <SectionLink to="start"> INICIO</SectionLink>
                 <SectionLink to="aboutme">SOBRE MI</SectionLink>
                 <SectionLink to="experience">EXPERIENCIA</SectionLink>
                 <SectionLink to="proyects">PROYECTOS</SectionLink>
@@ -32,22 +33,19 @@ const Main = () => {
             <style jsx>{`
                 .blur {
                     position:fixed;
+                    z-index:99;
                     transition: background-color 0.3s ease;
-                    background-color: ${scrolling ? 'rgba(255, 255, 255, 0.3)' : 'transparent'};
+                    background-color: ${scrolling ? 'rgba(255, 255, 255, 0.014)' : 'transparent'};
                     backdrop-filter: blur(${scrolling ? '10px' : '0'});
                     
                 }
                  .main{
-                    color:var(--white) ;
+                    color:var(--white);
+                    font-family: "Raleway", sans-serif;
                     border-bottom:solid .1rem var(--black-light);
                     padding: 1rem 0 1rem 0;
                     margin: 0 30rem;
-                } 
-                a{
-                    font-family: "Raleway", sans-serif ;
                 }
-               
-  
                 `}</style>
         </nav>
 

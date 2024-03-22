@@ -9,11 +9,7 @@
   --padding-desktop: 0 15rem 0 15rem;
   --padding-mobile: 5rem 0 5rem 0;
 }
-/* body {
-  background-image: url("../../public/background.jpg");
-  overflow-x: auto;
-  overflow-y: auto;
-} */
+
 p {
   margin-bottom: 0 !important;
 }
@@ -30,9 +26,6 @@ p {
 a {
   cursor: pointer;
 }
-/* a:hover {
-  color: var(--white) !important;
-} */
 
 input {
   margin-top: 25px !important;
@@ -53,7 +46,6 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--white);
 }
 button {
   background-color: transparent;
@@ -64,14 +56,6 @@ button {
   cursor: pointer;
 }
 
-/* .btn-contact {
-  border: solid var(--white) 0.1rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  color: var(--white);
-  cursor: pointer;
-  display: inline-block;
-} */
 /* .container {
   display: flex;y
   flex-direction: column;
@@ -89,20 +73,6 @@ button {
   color: var(--black-light) !important;
 }
 
-/* .text-footer {
-  color: var(--white-two);
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
-.footer > div {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-} */
 /* .carousel-indicators {
   display: none;
 }

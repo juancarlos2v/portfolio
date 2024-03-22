@@ -3,7 +3,7 @@ import AboutMe from "@layouts/AboutMe"
 import ContactMe from "@layouts/ContactMe"
 import Introduce from "@layouts/Introduce"
 import Projects from "@layouts/Projects"
-import Skills from "@layouts/Skills"
+import Resume from "@layouts/Resume"
 
 const index = () => {
     return (
@@ -12,9 +12,9 @@ const index = () => {
             <Main />
             <Introduce />
             <AboutMe />
-            <Skills />
-            {/* <Projects />
-            <ContactMe /> */}
+            <Resume />
+            <Projects />
+            {/* <ContactMe /> */}
         </div>
     )
 }
