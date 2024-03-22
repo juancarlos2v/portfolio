@@ -4,7 +4,7 @@ export const repositories = [
     description:
       "Desarrollado con Spring y Vue.js. Permite crear cuentas, realizar transferencias, pagar servicios, solicitar tarjetas y préstamos. Proporciona una interfaz de usuario amigable para administrar sus finanzas de manera segura y conveniente",
     code: "https://github.com/juancarlos2v/homebanking",
-    deploy: "https://homebanking-mindhub.up.railway.app/web/index.html",
+    deploy: "https://homebanking-9azo.onrender.com/web/index.html",
     image: "bank.png",
   },
   {
@@ -12,7 +12,7 @@ export const repositories = [
     description:
       "Sistema de gestión integral diseñado para administrar un club dedicado a la danza. Proporciona una solución completa que abarca desde la organización de clases hasta la difusión de festivales y la gestión de una tienda virtual.",
     code: "https://github.com/juancarlos2v/duodanzaclub",
-    deploy: "https://duodanzaclub.up.railway.app/web/index.html",
+    deploy: "https://duodanza.onrender.com/web/index.html",
     image: "danza.png",
   },
   {
