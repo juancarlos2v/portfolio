@@ -6,14 +6,16 @@
   --white-two: #cccccc;
   --black-light: #6b6a6a;
   --black: #090909;
-  --padding-desktop: 0 15rem 0 15rem;
-  --padding-mobile: 5rem 0 5rem 0;
+  --padding-desktop: 8rem 15rem 8rem 15rem;
+  --padding-mobile: 5rem 3rem 5rem 3rem;
 }
 
 p {
   margin-bottom: 0 !important;
 }
 h1,
+h2,
+h3,
 button,
 input,
 optgroup,
@@ -47,40 +49,28 @@ a:visited,
 a:active {
   text-decoration: none;
 }
+
 button {
   background-color: transparent;
-  color: var(--white);
-  padding: 0.5rem;
-  margin-top: 2rem;
   border-style: none;
   cursor: pointer;
 }
 
-/* .container {
-  display: flex;y
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100vh;
-  scroll-behavior: smooth;
-  scroll-snap-align: start;
-  overflow-y: hidden;
-} */
+/* sections */
+.container-section {
+  padding: var(--padding-desktop);
+  height: 100vh auto;
+}
 
-.text {
+.white {
   color: var(--white);
 }
-.text-black-light {
+.black-light {
   color: var(--black-light) !important;
 }
 
-/* .carousel-indicators {
-  display: none;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  display: none;
-} */
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
+  .container-section {
+    padding: var(--padding-mobile);
+  }
 }

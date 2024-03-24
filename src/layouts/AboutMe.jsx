@@ -4,10 +4,10 @@ const AboutMe = () => {
 
     return (
 
-        <div className="container-about col-12">
+        <div id="aboutme" className="container-section col-12">
 
             <p className="mb-5">SOBRE MI |</p>
-            <div className="col-12 d-flex justify-content-between">
+            <div className="col-12 d-flex flex-sm-column flex-lg-row justify-content-lg-between align-items-sm-center">
                 {/* <Image
                     key={index}
                     src={url}
@@ -33,11 +33,9 @@ const AboutMe = () => {
                  height:20rem;
                  width:15rem
                 }
-                .container-about{
-                    padding: var(--padding-desktop);
+                .container-section{
                     background-color:var(--white);
-                    height:100vh;
-                    padding-top:10rem;
+                  
                 }
                 .title {
                     font-size: 16px;

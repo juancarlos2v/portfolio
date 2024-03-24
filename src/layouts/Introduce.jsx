@@ -1,34 +1,18 @@
-// import IconBxlGmail from "@icons/IconBxGmail";
-// import IconGithub from "@icons/IconGithub";
-// import IconLinkedin from "@icons/IconLinkedin";
-
 const Introduce = () => {
-    const name = "JUAN CARLOS VILCHERREZ"
+    const name = "JUAN CARLOS"
+    const lastName = "VILCHERREZ"
     const rol = "Desarrollador Full Stack"
     return (
         <>
 
-            <div className="container  d-flex flex-column justify-content-center align-items-center">
-                {/* <div></div> */}
-                <div className="d-flex  flex-column align-items-end">
-                    <h1 className="typewriter text-light"> {name} </h1>
-                    <p className="rol">{rol} </p>
+            <div id="start" className="container  d-flex flex-column justify-content-center align-items-center">
+                <div className="d-flex flex-column align-items-lg-end align-items-center">
+                    <h1 className="typewriter text-light d-flex">
+                        {name}<span className="d-md-none d-lg-block d-sm-none"> &nbsp;{lastName}</span>
+                    </h1>
+                    <h1 className="d-lg-none text-light">{lastName} </h1>
+                    <p className="rol">{rol}</p>
                 </div>
-                {/* <div></div> */}
-                {/* <div className="icons col-12 d-flex justify-content-center ">
-                    <div className="d-flex col-12 justify-content-between">
-                        <a target="_blank" href="https://www.github.com/juancarlos2v">
-                            <IconGithub />
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/juancarlos-vilcherrez/">
-                            <IconLinkedin />
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/juancarlos-vilcherrez/">
-                            <IconBxlGmail />
-                        </a>
-                    </div>
-                </div> */}
-
             </div>
 
             <style jsx>{`

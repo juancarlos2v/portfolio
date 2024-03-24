@@ -1,36 +1,31 @@
-import Footer from "@components/Footer";
-import Nav from "@components/Nav"
-import Inbox from "src/icons/Inbox";
-import Phone from "src/icons/Phone";
+import IconBxlGmail from "@icons/IconBxlGmail";
+import IconLinkedin from "@icons/IconLinkedin";
+import IconWhatsapp from "@icons/IconWhatsapp";
 
 const ContactMe = () => {
     let name = "contacto";
     let page = "5"
     return (
-        <div id="contact" className="container  ">
-            <Nav />
-            {/* <div className="d-none  flex-column align-items-lg-start col-lg-6 col-md-7 pt-lg-0 p-5  order-lg-1 order-2">
-                <h1 className="title">CONTACTAME</h1>
+        <div id="contact" className="container-section d-flex flex-column justify-content-between">
 
-                <input className="col-lg-7" type="text" placeholder="Nombre" />
-                <input className="col-lg-7" type="number" placeholder="Telefono" />
-                <input className="col-lg-7" type="text" placeholder="Mensaje" />
-                <button type="button" className="btn-contact">ENVIAR</button>
-            </div> */}
-            <div className="text-white d-flex flex-column justify-content-center align-items-center ">
-                <p >Si te gusta mi trabajo no dudes en escribirme, </p>
-                <p >coordinare un reunion a la brevedad.</p>
-                <div className="d-flex flex-row  mt-4 ">
-                    <Phone />
-                    <p >+54 11 22786758</p>
-                </div>
-                <div className="d-flex  flex-row mt-2">
-                    <Inbox />
-                    <p>juanc.vilcherrez@gmail.com</p>
-                </div>
+            <div className="white">
+                <h1 >¿Tenés alguna pregunta o propuesta?</h1>
+                <h3>Adelante...</h3>
+            </div>
+            <div className="row text-light g-2 ">
+                <a className="white" href="https://wa.me/5491122786758" target="_blank"> <IconWhatsapp />&nbsp; +54 1122786758</a>
+                <a className="white" href="mailto:juanc.vilcherrez@gmail.com" target="_blank"><IconBxlGmail />&nbsp; juanc.vilcherrez@gmail.com </a>
+                <a className="white" href="https://www.linkedin.com/in/juancarlos-vilcherrez" target="_blank"><IconLinkedin />&nbsp;in/juancarlos-vilcherrez</a>
             </div>
 
-            <Footer sectionName={name} sectionPage={page} />
+            <style jsx>{`
+                .container-section{
+                    height:100vh;
+                    padding-top:10rem ;
+                    padding-bottom:10rem;
+                }
+                
+            `}</style>
         </div >
     )
 }

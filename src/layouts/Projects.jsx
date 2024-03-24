@@ -14,7 +14,7 @@ const Projects = () => {
     };
 
     return (
-        <div className="container-projects col-12">
+        <div id="proyects" className="container-section  col-12">
             <p>PROYECTOS |</p>
             <div className="body">
                 <div>
@@ -39,12 +39,9 @@ const Projects = () => {
                 </div>
             </div>
 
-
             <style jsx>{`
-            .container-projects{
-                padding: var(--padding-desktop);
+            .container-section {
                 background-color:var(--white);
-                padding-top:10rem;
             }
             .container-projects button{
                 color:var(--black);

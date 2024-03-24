@@ -2,7 +2,7 @@ import experience from "@data/experience.json"
 
 const Resume = () => {
     return (
-        <div className="container-exp">
+        <div id="experience" className="container-section">
             <p className="mb-5">EXPERIENCIA |</p>
             {experience.map((exp, index) => (
                 <div className="d-flex col-12 justify-content-start exp" key={exp.id}>
@@ -24,12 +24,8 @@ const Resume = () => {
             ))}
 
             <style jsx>{`
-                .container-exp{
-                    padding: var(--padding-desktop);
-                    
-                    padding-top:8rem;
-                }
-                .container-exp p{
+                
+                .container-section p{
                     color:var(--white)
                 }
                 .exp{
