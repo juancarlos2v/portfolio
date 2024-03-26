@@ -7,7 +7,7 @@ const AboutMe = () => {
         <div id="aboutme" className="container-section col-12">
 
             <p className="mb-5">SOBRE MI |</p>
-            <div className="col-12 d-flex flex-sm-column flex-lg-row justify-content-lg-between align-items-sm-center">
+            <div className="col-12 d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
                 {/* <Image
                     key={index}
                     src={url}
@@ -45,6 +45,17 @@ const AboutMe = () => {
                 }
                 .description{
                     font-size:15px;
+                }
+                @media (max-width: 992px) {
+                .title {
+                    margin-top: 2rem;
+                }
+                .title, .description{
+                    text-align:center;
+                }
+                 @media (max-width: 992px) {
+                    
+                 }
                 }
                 
             `}</style>

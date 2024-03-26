@@ -3,16 +3,6 @@ import projects from "@data/projects.json";
 import ProjectCard from "@components/ProjectCard";
 
 const Projects = () => {
-    const [project, setProject] = useState(0);
-    const changeContent = () => {
-
-        project === repositories.length - 1 ?
-            setProject(0) :
-            setProject((prev) => prev + 1)
-
-        console.log(project)
-    };
-
     return (
         <div id="proyects" className="container-section  col-12">
             <p>PROYECTOS |</p>
@@ -25,7 +15,7 @@ const Projects = () => {
                 </div>
                 <div className="row ">
                     {projects.map((project, index) => (
-                        <div className="col-lg-4 col-md-6 mb-4 flex-wrap" key={index}>
+                        <div className="col " key={index}>
                             <ProjectCard
                                 id={project.id}
                                 name={project.name}

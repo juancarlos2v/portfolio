@@ -7,7 +7,8 @@
   --black-light: #6b6a6a;
   --black: #090909;
   --padding-desktop: 8rem 15rem 8rem 15rem;
-  --padding-mobile: 5rem 3rem 5rem 3rem;
+  --padding-middle: 5rem 3rem 5rem 3rem;
+  --padding-small: 4rem 2rem 4rem 2rem;
 }
 
 p {
@@ -69,8 +70,13 @@ button {
   color: var(--black-light) !important;
 }
 
+@media (max-width: 992px) {
+  .container-section {
+    padding: var(--padding-middle);
+  }
+}
 @media (max-width: 768px) {
   .container-section {
-    padding: var(--padding-mobile);
+    padding: var(--padding-small);
   }
 }

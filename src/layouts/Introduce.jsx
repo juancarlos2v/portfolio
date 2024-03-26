@@ -8,9 +8,9 @@ const Introduce = () => {
             <div id="start" className="container  d-flex flex-column justify-content-center align-items-center">
                 <div className="d-flex flex-column align-items-lg-end align-items-center">
                     <h1 className="typewriter text-light d-flex">
-                        {name}<span className="d-md-none d-lg-block d-sm-none"> &nbsp;{lastName}</span>
+                        {name}<span className=" d-md-block d-none"> &nbsp;{lastName}</span>
                     </h1>
-                    <h1 className="d-lg-none text-light">{lastName} </h1>
+                    <h1 className="d-lg-none d-md-none text-light">{lastName} </h1>
                     <p className="rol">{rol}</p>
                 </div>
             </div>
