@@ -29,10 +29,11 @@ const Resume = () => {
                     color:var(--white)
                 }
                 .exp{
-                    height:13rem;
+                    height:auto;
                 }
                 .description-exp{
                     margin-left:3rem;
+                    padding-bottom:2rem;
                 }
                 `}</style>
         </div>
