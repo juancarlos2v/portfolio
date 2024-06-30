@@ -4,7 +4,7 @@ const AboutMe = () => {
 
     return (
 
-        <div id="aboutme" className="container-section col-12">
+        <div id="aboutme" className="container-section col-12 h-md-auto h-lg-100">
 
             <p className="mb-5">SOBRE MI |</p>
             <div className="col-12 d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">

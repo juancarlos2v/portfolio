@@ -2,10 +2,10 @@ import experience from "@data/experience.json"
 
 const Resume = () => {
     return (
-        <div id="experience" className="container-section">
+        <div id="experience" className="container-section ">
             <p className="mb-5">EXPERIENCIA |</p>
             {experience.map((exp, index) => (
-                <div className="d-flex col-12 justify-content-start exp" key={exp.id}>
+                <div className="d-flex col-12 justify-content-start exp " key={exp.id}>
                     <div className="timeline-circle ">
                         <svg height="100%" width="20">
                             {index !== experience.length - 1 && (

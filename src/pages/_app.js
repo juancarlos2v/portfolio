@@ -14,7 +14,7 @@ export default function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
-        <title>Juan Carlos Vilcherrez | Portfolio</title>
+        <title>Juan Carlos Vilcherrez</title>
       </Head>
       <Component {...pageProps} />
     </>

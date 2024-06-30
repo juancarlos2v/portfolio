@@ -1,10 +1,11 @@
 import { useState } from "react";
 import projects from "@data/projects.json";
 import ProjectCard from "@components/ProjectCard";
+import { Col, Row } from "react-bootstrap";
 
 const Projects = () => {
     return (
-        <div id="proyects" className="container-section  col-12">
+        <div id="proyects" className="container-section  col-12 h-auto">
             <p>PROYECTOS |</p>
             <div className="body">
                 <div>
@@ -13,9 +14,9 @@ const Projects = () => {
                     <button type="button">| LANDING </button>
                     <button type="button">| NPM </button>
                 </div>
-                <div className="row ">
+                <Row lg={3} md={2} sm={1} >
                     {projects.map((project, index) => (
-                        <div className="col " key={index}>
+                        <Col key={index}>
                             <ProjectCard
                                 id={project.id}
                                 name={project.name}
@@ -24,9 +25,9 @@ const Projects = () => {
                                 deploy={project.deploy}
                                 image={project.image}
                             />
-                        </div>
+                        </Col>
                     ))}
-                </div>
+                </Row>
             </div>
 
             <style jsx>{`

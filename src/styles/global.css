@@ -6,7 +6,7 @@
   --white-two: #cccccc;
   --black-light: #6b6a6a;
   --black: #090909;
-  --padding-desktop: 8rem 15rem 8rem 15rem;
+  --padding-desktop: 8rem 10rem 8rem 10rem;
   --padding-middle: 5rem 3rem 5rem 3rem;
   --padding-small: 4rem 2rem 4rem 2rem;
 }
@@ -60,7 +60,7 @@ button {
 /* sections */
 .container-section {
   padding: var(--padding-desktop);
-  height: 100vh auto;
+  height: 100vh;
 }
 
 .white {
@@ -78,5 +78,10 @@ button {
 @media (max-width: 768px) {
   .container-section {
     padding: var(--padding-small);
+  }
+}
+@media (max-width: 1024px) {
+  .container-section {
+    padding: var(--padding-middle);
   }
 }
