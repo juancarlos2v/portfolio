@@ -12,7 +12,7 @@ const Projects = () => {
                     <button type="button">TODOS </button>
                     <button type="button">| APP </button>
                     <button type="button">| LANDING </button>
-                    <button type="button">| NPM </button>
+                    {/* <button type="button">| NPM </button> */}
                 </div>
                 <Row lg={3} md={2} sm={1} >
                     {projects.map((project, index) => (

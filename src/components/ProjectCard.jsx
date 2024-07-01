@@ -19,8 +19,12 @@ const ProjectCard = ({ id, name, description, code, deploy, image }) => {
                 <h4 className="title d-flex align-items-end  h-100 p-4 text-light " >{name} </h4>
             </div>
             <Row className="justify-content-start" >
-                <Col sm={2} className="d-flex justify-content-start"><a href={code} target="_blank">{`Code`} </a></Col>
-                <Col sm={3} className="d-flex justify-content-start"><a href={deploy} target="_blank">Preview</a></Col>
+                <Col sm={2} className="d-flex justify-content-start "><a className="link" href={code} target="_blank"> {`Code`} </a></Col>
+                {
+                    deploy != null &&
+                    <Col sm={3} className="d-flex justify-content-start"><a className="link" href={deploy} target="_blank">Preview</a>
+                    </Col>
+                }
 
             </Row>
             <style jsx>{`
@@ -67,6 +71,12 @@ const ProjectCard = ({ id, name, description, code, deploy, image }) => {
                     padding: 0.5rem;
                     font-family: "IBM Plex Mono", monospace;
                 
+                }
+                .link{
+                    color:var(--black-light) !important;
+                }
+                .link:hover{
+                    color:var(--black) !important;
                 }
         `}</style>
         </div>

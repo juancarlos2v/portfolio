@@ -3,7 +3,6 @@
 const AboutMe = () => {
 
     return (
-
         <div id="aboutme" className="container-section col-12 h-md-auto h-lg-100">
 
             <p className="mb-5">SOBRE MI |</p>
@@ -18,14 +17,11 @@ const AboutMe = () => {
                 /> */}
                 <div className="photo col-4"></div>
                 <div className="col-8 p-2">
-                    <p className="title">Soy <span className="text-black-light">Juan Carlos</span> <br />
-                        Desarrollador Web y estudiante de 4to año de Arquitectura.</p>
-                    <p className="description" >Entusiasta desarrollador con una perspectiva creativa. Además de mis habilidades en programación, también soy estudiante de Arquitectura en la Universidad de Buenos Aires, lo cual me a permitido apreciar la importancia de la estética y el diseño en todos los aspectos de mi trabajo. Me encanta explorar el mundo del arte ademas de hacer ejercicios en mis tiempos libres, y encontrar inspiración en diversas disciplinas. Mi enfoque aplicado y curioso me impulsan a superar desafíos en todas las áreas en las que me involucro.
+                    {/* <p className="title">Sobre <span className="text-black-light">mí</span></p> */}
+                    <p className="description" >A lo largo de mi trayecto, me he visto involucrado en proyectos que combinan creatividad y tecnología de manera innovadora,mi pasión por el desarrollo se complementa con una apreciación profunda por la estética y el diseño, elementos que considero esenciales en todos los proyectos en los que me embarco. <br /> Mi enfoque aplicado y curioso me impulsa a superar desafíos y buscar soluciones innovadoras en todas las áreas de mi vida profesional. Siempre busco nuevas maneras de integrar creatividad y funcionalidad, asegurando que cada proyecto sea no solo eficiente, sino también visualmente atractivo
                     </p>
                 </div>
-
             </div>
-
 
             <style jsx>{`
                 .photo{
@@ -35,7 +31,6 @@ const AboutMe = () => {
                 }
                 .container-section{
                     background-color:var(--white);
-                  
                 }
                 .title {
                     font-size: 16px;
@@ -47,17 +42,13 @@ const AboutMe = () => {
                     font-size:15px;
                 }
                 @media (max-width: 992px) {
-                .title {
-                    margin-top: 2rem;
+                    .title {
+                        margin-top: 2rem;
+                    }
+                    .title, .description{
+                        text-align:center;
+                    }
                 }
-                .title, .description{
-                    text-align:center;
-                }
-                 @media (max-width: 992px) {
-                    
-                 }
-                }
-                
             `}</style>
         </div>
     )

@@ -11,12 +11,12 @@ const Skills = () => {
 
                     <p>- Diseño web adaptable</p>
                     <p>- Javascript: React, Vue, Next</p>
-                    <p>- Java+ Spring</p>
+                    <p>- Java + Spring</p>
                     <p>- Base de datos: MySQL</p>
                 </Col>
                 <Col lg={6} sm={12} >
                     <p>- HTML + CSS + Bootstrap</p>
-                    <p>-  Editor grafico: Figma + Photoshop </p>
+                    <p>- Editor grafico: Figma + Photoshop </p>
                     <p>- Version de control: GIT</p>
 
                 </Col>
