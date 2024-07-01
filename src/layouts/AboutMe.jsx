@@ -18,7 +18,7 @@ const AboutMe = () => {
                 <div className="photo col-4"></div>
                 <div className="col-8 p-2">
                     {/* <p className="title">Sobre <span className="text-black-light">mí</span></p> */}
-                    <p className="description" >A lo largo de mi trayecto, me he visto involucrado en proyectos que combinan creatividad y tecnología de manera innovadora,mi pasión por el desarrollo se complementa con una apreciación profunda por la estética y el diseño, elementos que considero esenciales en todos los proyectos en los que me embarco. <br /> Mi enfoque aplicado y curioso me impulsa a superar desafíos y buscar soluciones innovadoras en todas las áreas de mi vida profesional. Siempre busco nuevas maneras de integrar creatividad y funcionalidad, asegurando que cada proyecto sea no solo eficiente, sino también visualmente atractivo
+                    <p className="description" >A lo largo de mi trayecto, me he visto involucrado en proyectos que combinan creatividad y tecnología de manera innovadora, mi pasión por el desarrollo se complementa con una apreciación profunda por la estética y el diseño, elementos que considero esenciales en todos los proyectos en los que me embarco. <br /> Mi enfoque aplicado y curioso me impulsa a superar desafíos y buscar soluciones innovadoras en todas las áreas de mi vida profesional. Siempre busco nuevas maneras de integrar creatividad y funcionalidad, asegurando que cada proyecto sea no solo eficiente, sino también visualmente.
                     </p>
                 </div>
             </div>
