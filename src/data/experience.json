@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "workplace": "NO COUNTRY",
+    "rol": "DESARROLLADOR FULL STACK",
+    "from": "2023",
+    "until": "actual",
+    "description": "A cargo de un taller de computación donde mi responsabilidad consiste en asegurar que los sistemas operativos estén actualizados, los programas funcionen correctamente y los equipos estén en óptimas condiciones."
+  },
+  {
+    "id": 2,
+    "workplace": "INSTITUCION EDUCATIVA PRIVADA",
+    "rol": "SOPORTE IT",
+    "from": "2023",
+    "until": "actual",
+    "description": "A cargo de un taller de computación donde mi  responsabilidad consiste en asegurar que los sistemas operativos estén  actualizados, los programas funcionen correctamente y los equipos estén  en óptimas condiciones."
+  },
+  {
+    "id": 3,
+    "workplace": "EY",
+    "rol": "DESARROLLADOR BACKEND",
+    "from": "2022",
+    "until": "2023",
+    "description": "Usando Java y Spring abordé distintos  requerimientos para aplicaciones de gestión financiera con  microservicios. Mis conocimientos en APIs RESTful me permitió apoyar en  el diseño y mantenimiento de las mismas. Además, durante ese periodo,  tuve la oportunidad de ampliar mis habilidades al recibir capacitación  en el desarrollo de interfaces de usuario utilizando React."
+  },
+  {
+    "id": 4,
+    "workplace": "NO COUNTRY",
+    "rol": "DESARROLLADOR FULL STACK",
+    "from": "2021",
+    "until": "2022",
+    "description": "Desarrollé una aplicación simulando un  homebanking utilizando Java - Spring para el backend y JavaScript con  Vue para el frontend. Con Spring pude crear una API RESTful, mientras  que con Vue pude construir una interfaz de usuario interactiva y  amigable. La combinación de  estas tecnologías me permitió crear una aplicación web moderna y funcional para simular las operaciones bancarias."
+  }
+]

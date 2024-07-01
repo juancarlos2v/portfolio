@@ -1,5 +1,7 @@
 import { Link } from 'react-scroll';
 
+
+
 const SectionLink = ({ to, children }) => {
     return (
         <Link
@@ -9,6 +11,7 @@ const SectionLink = ({ to, children }) => {
             offset={0} // Ajusta esto según la altura de tu barra de navegación
         >
             {children}
+
         </Link>
     );
 };

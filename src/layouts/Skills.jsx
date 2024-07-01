@@ -1,30 +1,26 @@
-import Footer from "@components/Footer";
-import Nav from "@components/Nav"
+import React from 'react'
+import { Col, Row } from 'react-bootstrap'
 
 const Skills = () => {
-    let name = "habilidades";
-    let page = "3"
     return (
-        <div className="container">
-            <Nav />
-            <div className="w-100 p-lg-0">
-                <h1 className="title">Mis Habilidades</h1>
-                <div className="skills d-flex text-white mt-4 flex-wrap">
-                    <div >
-                        <p>- HTML + CSS</p>
-                        <p>- Diseño web adaptable</p>
-                        <p>- Editor grafico: Photoshop</p>
-                        <p>- Version de control: GIT</p>
-                    </div>
-                    <div className="mx-lg-5">
-                        <p>- Javascript + frameworks: React, Vue, Next, Express</p>
-                        <p>- Java + Spring</p>
-                        <p>- Bases de datos: MySQl, MongoDB</p>
-                    </div>
-                </div>
-            </div>
-            <Footer sectionName={name} sectionPage={page} />
+        <div id="skills" className="container-section  col-12 text-light d-flex flex-column justify-content-center align-items-start ">
 
+            <p className='mb-4'>HABILIDADES |</p>
+            <Row lg={2} className='pt-2 w-100'>
+                <Col lg={6} sm={12}>
+
+                    <p>- Diseño web adaptable</p>
+                    <p>- Javascript: React, Vue, Next</p>
+                    <p>- Java + Spring</p>
+                    <p>- Base de datos: MySQL</p>
+                </Col>
+                <Col lg={6} sm={12} >
+                    <p>- HTML + CSS + Bootstrap</p>
+                    <p>- Editor grafico: Figma + Photoshop </p>
+                    <p>- Version de control: GIT</p>
+
+                </Col>
+            </Row>
         </div>
     )
 }

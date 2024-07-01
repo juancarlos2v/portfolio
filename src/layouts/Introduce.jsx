@@ -1,60 +1,38 @@
-import Nav from "@components/Nav";
-import SectionLink from "@components/SectionLink";
-
 const Introduce = () => {
-    let gretting = "<>HOLA MUNDO</>"
+    const name = "JUAN CARLOS"
+    const lastName = "VILCHERREZ"
+    const rol = "Desarrollador Full Stack"
     return (
         <>
 
-            <div className="container col-12">
-                <Nav />
-
-                <div className=" d-flex justify-content-lg-between align-items-center ">
-                    <div className="typewriter">
-                        <p className="text-light"> {gretting} </p>
-                        <p className="title">Me llamo Juan Carlos</p>
-                        <p className="title">Desarrollador Full Stack</p>
-                        <div className="btn-contact">
-                            <SectionLink to="contact">CONTACTAME</SectionLink>
-                        </div>
-                    </div>
-                    <div className="avatar" ></div>
+            <div id="start" className="container  d-flex flex-column justify-content-center align-items-center">
+                <div className="d-flex flex-column align-items-lg-end align-items-center">
+                    <h1 className="typewriter text-light d-flex">
+                        {name}<span className=" d-md-block d-none"> &nbsp;{lastName}</span>
+                    </h1>
+                    <h1 className="d-lg-none d-md-none text-light">{lastName} </h1>
+                    <p className="rol">{rol}</p>
                 </div>
+            </div>
 
-                <div className="footer d-flex align-items-center flex-wrap">
-                    <p className="text-footer col-lg-6 col-md-12">juanc.vilcherrez@gmail.com</p>
-                    <div className="col-lg-6 col-md-12 d-flex align-items-center justify-content-between">
-                        <a target="_blank" href="https://www.github.com/juancarlos2v">Github</a>
-                        <a target="_blank" href="https://www.linkedin.com/in/juancarlos-vilcherrez/">Linkedin</a>
-                    </div>
-                </div>
-                <style jsx>{`
-                nav{
-                    display:flex;
-                    justify-content:space-between;
-                    align-items:center;
+            <style jsx>{`
+                .container{
+                    height:100vh;
+                }
+                .container h1{
+                    font-size:45px;
+                }
+
+                .rol{
+                    font-size:1rem
+                } 
+                p{
                     color:var(--white);
+                    font-size:20px
                 }
-                nav>button{
-                    color:var(--black-light)
-                }
-                
-                .text-light{
-                    margin-bottom:1rem !important
-                }
-                .avatar {
-                    width: 15rem;
-                    height: 15rem;
-                    background-image: url("photo.jpg");
-                    background-size: cover;
-                    background-position: center;
-                    border-radius: 50%;
-                    margin: 2rem;
-                }
-
-                
+  
                 `}</style>
-            </div >
+
 
 
         </>

@@ -1,32 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
   --white: #ffffff;
   --white-two: #cccccc;
-  --black-light: #808080;
+  --black-light: #6b6a6a;
   --black: #090909;
+  --padding-desktop: 8rem 10rem 8rem 10rem;
+  --padding-middle: 5rem 3rem 5rem 3rem;
+  --padding-small: 4rem 2rem 4rem 2rem;
 }
-/* body {
-  background-image: url("../../public/background.jpg");
-  overflow-x: auto;
-  overflow-y: auto;
-} */
+
 p {
   margin-bottom: 0 !important;
 }
 h1,
+h2,
+h3,
 button,
 input,
 optgroup,
 select,
 textarea,
-p,
-a {
+p {
   font-family: "IBM Plex Mono", monospace;
   margin: 0;
 }
-a:hover {
-  color: var(--white) !important;
+a {
+  cursor: pointer;
 }
 
 input {
@@ -48,79 +49,39 @@ a:link,
 a:visited,
 a:active {
   text-decoration: none;
-  color: var(--white-two);
 }
+
 button {
   background-color: transparent;
-  color: var(--white);
-  padding: 0.5rem;
-  margin-top: 2rem;
   border-style: none;
   cursor: pointer;
 }
 
-.btn-contact {
-  border: solid var(--white) 0.1rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  color: var(--white);
-  cursor: pointer;
-  display: inline-block;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+/* sections */
+.container-section {
+  padding: var(--padding-desktop);
   height: 100vh;
-  scroll-behavior: smooth;
-  scroll-snap-align: start;
-  overflow-y: hidden;
 }
 
-.title {
-  font-size: 38px;
+.white {
   color: var(--white);
 }
-.text {
-  color: var(--white);
-}
-.text-black-light {
+.black-light {
   color: var(--black-light) !important;
 }
 
-.text-footer {
-  color: var(--white-two);
-}
-
-.footer {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 10px;
-}
-.footer > div {
-  display: flex;
-  justify-content: space-between;
-  width: 20%;
-}
-/* .carousel-indicators {
-  display: none;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-  display: none;
-} */
-
-@media (max-width: 767px) {
-  .container {
-    text-align: center;
+@media (max-width: 992px) {
+  .container-section {
+    padding: var(--padding-middle);
   }
-  .d-flex {
-    flex-direction: column;
-    justify-content: center;
+}
+@media (max-width: 768px) {
+  .container-section {
+    padding: var(--padding-small);
   }
-  .avatar {
-    width: 10rem;
-    height: 10rem;
+}
+@media (max-width: 1024px) {
+  .container-section {
+    padding: var(--padding-middle);
   }
 }
