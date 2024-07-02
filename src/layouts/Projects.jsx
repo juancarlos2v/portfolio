@@ -14,9 +14,9 @@ const Projects = () => {
                     <button type="button">| LANDING </button>
                     {/* <button type="button">| NPM </button> */}
                 </div>
-                <Row lg={3} md={2} sm={1} >
+                <Row lg={3} md={2} sm={1} xs={1} >
                     {projects.map((project, index) => (
-                        <Col key={index}>
+                        <Col key={index} xs={12}>
                             <ProjectCard
                                 id={project.id}
                                 name={project.name}
