@@ -3,10 +3,10 @@
 const AboutMe = () => {
 
     return (
-        <div id="aboutme" className="container-section col-12 h-md-auto h-lg-100">
+        <div id="aboutme" className="container-section col-12 h-md-auto h-lg-100 h-auto">
 
             <p className="mb-5">SOBRE MI |</p>
-            <div className="col-12 d-flex flex-column flex-lg-row justify-content-lg-between align-items-center">
+            <div className="col-12 d-flex flex-lg-row flex-column justify-content-between align-items-center">
                 {/* <Image
                     key={index}
                     src={url}
@@ -16,7 +16,7 @@ const AboutMe = () => {
                     alt="Juan Carlos"
                 /> */}
                 <div className="photo col-4"></div>
-                <div className="col-8 p-2">
+                <div className="col-12 p-2 col-lg-8 p-0">
                     {/* <p className="title">Sobre <span className="text-black-light">mí</span></p> */}
                     <p className="description" >A lo largo de mi trayecto, me he visto involucrado en proyectos que combinan creatividad y tecnología de manera innovadora, mi pasión por el desarrollo se complementa con una apreciación profunda por la estética y el diseño, elementos que considero esenciales en todos los proyectos en los que me embarco. <br /> Mi enfoque aplicado y curioso me impulsa a superar desafíos y buscar soluciones innovadoras en todas las áreas de mi vida profesional. Siempre busco nuevas maneras de integrar creatividad y funcionalidad, asegurando que cada proyecto sea no solo eficiente, sino también visualmente.
                     </p>

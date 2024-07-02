@@ -4,7 +4,7 @@
     "name": "GYMOVE",
     "description": "un sistema de gestión creado para administradores de gimnasios y negocios similares que precisan una webapp fácil y sencilla para mantener al día su base de datos de clientes, clases y membresías.",
     "code": "https://github.com/juancarlos2v/gym-app",
-    "deploy": "",
+    "deploy": null,
     "image": "gymove.png"
   },
   {

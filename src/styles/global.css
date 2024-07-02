@@ -9,6 +9,7 @@
   --padding-desktop: 8rem 10rem 8rem 10rem;
   --padding-middle: 5rem 3rem 5rem 3rem;
   --padding-small: 4rem 2rem 4rem 2rem;
+  --padding-little: 1rem 0.5rem;
 }
 
 p {
@@ -24,7 +25,7 @@ select,
 textarea,
 p {
   font-family: "IBM Plex Mono", monospace;
-  margin: 0;
+  margin: 0 !important;
 }
 a {
   cursor: pointer;
@@ -69,19 +70,26 @@ button {
 .black-light {
   color: var(--black-light) !important;
 }
-
-@media (max-width: 992px) {
+@media (max-width: 375px) {
   .container-section {
-    padding: var(--padding-middle);
+    padding: var(--padding-little);
   }
 }
-@media (max-width: 768px) {
+
+@media (min-width: 425px) {
   .container-section {
     padding: var(--padding-small);
   }
 }
-@media (max-width: 1024px) {
+
+@media (min-width: 768px) {
   .container-section {
     padding: var(--padding-middle);
+  }
+}
+
+@media (min-width: 1023px) {
+  .container-section {
+    padding: var(--padding-desktop);
   }
 }

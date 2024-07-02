@@ -2,7 +2,7 @@ import { Col, Row, Stack } from "react-bootstrap"
 
 const ProjectCard = ({ id, name, description, code, deploy, image }) => {
     return (
-        <div className="container-project d-flex flex-column col-10" key={id}>
+        <div className="container-project d-flex flex-column col-lg-10 col-12" key={id}>
             <div
                 className="image-project col-12"
                 style={{
@@ -16,13 +16,13 @@ const ProjectCard = ({ id, name, description, code, deploy, image }) => {
 
             >
                 {/* <span className="badge">0{id}</span> */}
-                <h4 className="title d-flex align-items-end  h-100 p-4 text-light " >{name} </h4>
+                <h4 className="title d-flex align-items-end  h-100 p-xl-4 p-2 text-light " >{name} </h4>
             </div>
             <Row className="justify-content-start" >
-                <Col sm={2} className="d-flex justify-content-start "><a className="link" href={code} target="_blank"> {`Code`} </a></Col>
+                <Col lg={3} md={4} sm={2} xs={6} className="d-flex justify-content-start "><a className="link" href={code} target="_blank"> {`Code`} </a></Col>
                 {
                     deploy != null &&
-                    <Col sm={3} className="d-flex justify-content-start"><a className="link" href={deploy} target="_blank">Preview</a>
+                    <Col lg={3} md={4} sm={3} xs={6} className="d-flex justify-content-start"><a className="link" href={deploy} target="_blank">Preview</a>
                     </Col>
                 }
 

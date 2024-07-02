@@ -7,16 +7,16 @@ const Skills = () => {
 
             <p className='mb-4'>HABILIDADES |</p>
             <Row lg={2} className='pt-2 w-100'>
-                <Col lg={6} sm={12}>
+                <Col lg={6} md={6} sm={12}>
 
                     <p>- Diseño web adaptable</p>
                     <p>- Javascript: React, Vue, Next</p>
                     <p>- Java + Spring</p>
                     <p>- Base de datos: MySQL</p>
                 </Col>
-                <Col lg={6} sm={12} >
+                <Col lg={6} md={6} sm={12} >
                     <p>- HTML + CSS + Bootstrap</p>
-                    <p>- Editor grafico: Figma + Photoshop </p>
+                    <p>- Diseño de Interfaz: Figma </p>
                     <p>- Version de control: GIT</p>
 
                 </Col>
