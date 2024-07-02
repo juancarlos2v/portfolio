@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://portfolio-git-master-juancarlos2vs-projects.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
