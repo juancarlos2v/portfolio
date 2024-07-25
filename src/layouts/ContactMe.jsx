@@ -1,6 +1,6 @@
 import IconBxlGmail from "@icons/IconBxlGmail";
 import IconLinkedin from "@icons/IconLinkedin";
-import IconWhatsapp from "@icons/IconWhatsapp";
+//import IconWhatsapp from "@icons/IconWhatsapp";
 
 const ContactMe = () => {
     return (
@@ -12,7 +12,7 @@ const ContactMe = () => {
             <div className=" row text-light mb-5 ">
                 {/* <a className="white" href="https://wa.me/5491122786758" target="_blank"> <IconWhatsapp />&nbsp; +54 1122786758</a> */}
                 <a className="white" href="mailto:juanc.vilcherrez@gmail.com" target="_blank"><IconBxlGmail />&nbsp; juanc.vilcherrez@gmail.com </a>
-                <a className="white" href="https://www.linkedin.com/in/juancarlos-vilcherrez" target="_blank"><IconLinkedin />&nbsp;in/juancarlos-vilcherrez</a>
+                <a className="white" href="https://www.linkedin.com/in/juancarlos-vilcherrez" target="_blank"><IconLinkedin />&nbsp; in/juancarlos-vilcherrez</a>
             </div>
 
             <style jsx>{`

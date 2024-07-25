@@ -30,14 +30,9 @@ const Introduce = () => {
                     color:var(--white);
                     font-size:20px
                 }
-  
                 `}</style>
-
-
-
         </>
     )
-
 }
 
 export default Introduce;
