@@ -7,7 +7,6 @@ const NavMob = () => {
 
     const handleToggle = () => setExpanded(!expanded);
     const handleSelect = () => setExpanded(false);
-    console.log(expanded)
 
     return <>
         <Navbar expand="lg" variant='dark' className="bg-body-tertiary" expanded={expanded} onToggle={handleToggle}>
