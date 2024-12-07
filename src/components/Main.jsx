@@ -23,7 +23,7 @@ const Main = () => {
 
     return <>
         <nav className={`blur d-flex col-12 justify-content-center ${scrolling ? 'scrolling' : ''}`}>
-            <div className="main col-8  d-md-flex d-none justify-content-between" >
+            <div className="main col-12  col-md-8  d-md-flex d-none justify-content-between" >
                 <SectionLink to="start"> INICIO</SectionLink>
                 <SectionLink to="aboutme">SOBRE MI</SectionLink>
                 <SectionLink to="skills">HABILIDADES</SectionLink>
