@@ -4,7 +4,7 @@ function IconGithub(props) {
     return (
         <svg
             viewBox="0 0 1024 1024"
-            fill="#ffffff"
+            fill="currentColor"
             height={size}
             width={size}
             {...props}

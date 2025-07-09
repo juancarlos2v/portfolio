@@ -3,7 +3,7 @@ import { Col, Row } from 'react-bootstrap'
 
 const Skills = () => {
     return (
-        <div id="skills" className="container-section  col-12 text-light d-flex flex-column justify-content-center align-items-start ">
+        <div id="skills" className="container col-12 text-light d-flex flex-column justify-content-center align-items-start ">
 
             <p className='mb-4'>HABILIDADES |</p>
             <Row lg={2} className='pt-2 w-100'>

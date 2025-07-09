@@ -1,34 +1,41 @@
+import SectionLink from "@components/SectionLink"
+import { Link } from "react-scroll"
+
 const Introduce = () => {
-    const name = "JUAN CARLOS"
-    const lastName = "VILCHERREZ"
+    const name = "Juan Carlos"
+    const lastName = "Vilcherrez"
     const rol = "Desarrollador Full Stack"
+    const description = "Construyendo código. Diseñando espacios.\n Explorando el futuro de la tecnología y la creatividad.\n Transformando ideas en experiencias."
     return (
         <>
 
-            <div id="start" className="container  d-flex flex-column justify-content-center align-items-center">
-                <div className="d-flex flex-column align-items-lg-end align-items-center">
-                    <h1 className="typewriter text-light d-flex">
-                        {name}<span className=" d-md-block d-none"> &nbsp;{lastName}</span>
-                    </h1>
-                    <h1 className="d-lg-none d-md-none text-light">{lastName} </h1>
-                    <p className="rol">{rol}</p>
+            <div id="start" className="container-ntr p-lateral  d-flex flex-column justify-content-center align-items-start">
+                <div className="d-flex flex-column align-items-start col-10">
+                    <span className="mb-2" style={{ color: 'var(--black-light)' }}>{`${name} ${lastName}`}</span>
+                    <h2 className=" text-light">{description} </h2>
                 </div>
+                <p className="mt-4">Mirá en qué estoy <SectionLink to='projects' >
+                    <span style={{ textDecorationLine: 'underline' }}>
+                        trabajando actualmente ⟶
+                    </span>
+                </SectionLink></p>
+
             </div>
-
+            <div
+                style={{
+                    width: '100vw', // ocupa todo el ancho de la pantalla
+                    height: '10rem', // altura ajustable
+                    backgroundColor: 'var(--white)',
+                    clipPath: 'polygon(0 100%, 100% 0, 100% 100%)',
+                }}
+            ></div>
             <style jsx>{`
-                .container{
-                    height:100vh;
+                .container-ntr{
+                    height:30rem;
                 }
-                .container h1{
-                    font-size:45px;
-                }
-
-                .rol{
-                    font-size:1rem
-                } 
                 p{
                     color:var(--white);
-                    font-size:20px
+                    font-size:18px
                 }
                 `}</style>
         </>

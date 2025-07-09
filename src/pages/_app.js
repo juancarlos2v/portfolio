@@ -4,6 +4,7 @@ import "@styles/global.css";
 import "@styles/index.css";
 import "@styles/background-noise.css";
 import "@styles/typewriting.css";
+import "@styles/triangle-bg.css"
 import Head from "next/head";
 
 export default function MyApp({ Component, pageProps }) {

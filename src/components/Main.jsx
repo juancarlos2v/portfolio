@@ -1,6 +1,10 @@
 import SectionLink from "@components/SectionLink"
 import { useEffect, useState } from "react";
 import NavMob from "./NavMob";
+import IconLinkedin from "@icons/IconLinkedin";
+import Link from "next/link";
+import IconGithub from "@icons/IconGithub";
+import ButtonMenu from "./ButtonMenu";
 
 const Main = () => {
     const [scrolling, setScrolling] = useState(false);
@@ -22,45 +26,42 @@ const Main = () => {
     }, []);
 
     return <>
-        <nav className={`blur d-flex col-12 justify-content-center ${scrolling ? 'scrolling' : ''}`}>
-            <div className="main col-12  col-md-8  d-md-flex d-none justify-content-between" >
-                <SectionLink to="start"> INICIO</SectionLink>
-                <SectionLink to="aboutme">SOBRE MI</SectionLink>
-                <SectionLink to="skills">HABILIDADES</SectionLink>
-                <SectionLink to="proyects">PROYECTOS</SectionLink>
-                <SectionLink to="contact">CONTACTO</SectionLink>
+        {/* <nav className={`blur d-flex col-12 justify-content-center ${scrolling ? 'scrolling' : ''}`}> */}
+        <nav
+            className="p-lateral mt-5 col-12 d-none d-lg-flex justify-content-between"
+            style={{ color: 'var(--white-two' }}
+        >
+            <div className="d-flex justify-content-start gap-5">
+                <SectionLink to="aboutme"><p> Sobre mí</p></SectionLink>
+                <SectionLink to="skills">Blog</SectionLink>
             </div>
-
+            <div className="d-flex gap-4 justify-content-end align-items-center ">
+                <Link href={'https://www.github.com/juancarlos2v'} target="_blank" style={{ color: 'var(--white)' }}><IconGithub /> </Link>
+                <Link href={'https://www.linkedin.com/in/juancarlos-vilcherrez'} target="_blank" style={{ color: 'var(--white)' }}><IconLinkedin /></Link>
+                <SectionLink
+                    to="contact"
+                ><span
+                    className="p-1 d-flex justify-content-center"
+                    style={{ backgroundColor: 'var(--white)', borderRadius: '8px', width: '8rem', color: 'var(--black)' }}>
+                        Contactame
+                    </span>
+                </SectionLink>
+            </div>
         </nav>
-        <div className='d-md-none d-sm-block d-lg-none marg col-12' >
-            <NavMob />
+
+
+        <div className='d-md-none d-lg-none d-flex justify-content-between align-items-center mt-4 col-12 p-lateral' >
+            <ButtonMenu />
+            <SectionLink
+                to="contact"
+            ><span
+                className="p-1 d-flex justify-content-center"
+                style={{ backgroundColor: 'var(--white)', borderRadius: '8px', width: '8rem', color: 'var(--black)' }}>
+                    Contactame
+                </span>
+            </SectionLink>
         </div>
-        <style jsx>{`
-                .blur {
-                    position:fixed;
-                    z-index:99;
-                    transition: background-color 0.3s ease;
-                    background-color: ${scrolling ? 'rgba(10, 10, 10, 0.623)' : 'transparent'};
-                    backdrop-filter: blur(${scrolling ? '10px' : '0'});
-                    
-                }
-                 .main{
-                    color:var(--white);
-                    mix-blend-mode: difference; // Cambia el color basado en el fondo
-                    font-family: "Raleway", sans-serif;
-                    border-bottom:solid .1rem var(--black-light);
-                    padding: 1rem 0 1rem 0;
-                    margin: 0 30rem;
-                }
-                .marg{
-                    position:fixed;
-                    z-index:99;
-                    padding:0.3rem 2rem  !important;
-                    transition: background-color 0.3s ease;
-                    background-color: ${scrolling ? 'rgba(10, 10, 10, 0.623)' : 'transparent'};
-                    backdrop-filter: blur(${scrolling ? '10px' : '0'});
-                }
-        `}</style>
+
     </>
 }
 

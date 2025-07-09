@@ -1,5 +1,5 @@
 function IconLinkedin(props) {
-    const size = "1em"
+    const size = "2em"
     return (
         <svg
             viewBox="0 0 1024 1024"

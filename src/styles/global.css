@@ -10,11 +10,13 @@
   --padding-middle: 5rem 3rem 5rem 3rem;
   --padding-small: 4rem 2rem 4rem 2rem;
   --padding-little: 1rem 0.5rem;
+  --padding-lat: 0rem 5rem;
 }
 
 p {
   margin-bottom: 0 !important;
 }
+
 h1,
 h2,
 h3,
@@ -27,6 +29,7 @@ p {
   font-family: "IBM Plex Mono", monospace;
   margin: 0 !important;
 }
+
 a {
   cursor: pointer;
 }
@@ -42,6 +45,7 @@ input {
   border-bottom: var(--white) 1px solid;
   color: var(--white);
 }
+
 input:focus {
   outline: none;
 }
@@ -67,25 +71,35 @@ button {
 .white {
   color: var(--white);
 }
+
 .black-light {
   color: var(--black-light) !important;
 }
 
 @media (max-width: 375px) {
-  .container-section {
+  .container-section .p-lateral {
     padding: var(--padding-little);
   }
+
 }
 
 @media (min-width: 376px) and (max-width: 424px) {
   .container-section {
     padding: var(--padding-small);
   }
+
+  .p-lateral {
+    padding: var(--padding-little);
+  }
 }
 
 @media (min-width: 425px) and (max-width: 767px) {
   .container-section {
     padding: var(--padding-small);
+  }
+
+  .p-lateral {
+    padding: var(--padding-little);
   }
 }
 
@@ -99,4 +113,13 @@ button {
   .container-section {
     padding: var(--padding-desktop);
   }
+
+  .p-lateral {
+    padding: var(--padding-lat);
+  }
+}
+
+.triangle-final {
+  clip-path: polygon(25% 75%, 75% 64.5%, 75% 75%, 25% 75%);
+  background-color: #ffffff
 }

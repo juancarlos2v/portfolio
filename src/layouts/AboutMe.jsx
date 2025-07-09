@@ -2,42 +2,45 @@ import Image from "next/legacy/image";
 
 const AboutMe = () => {
 
-    const url = "/1.jpg"
+    const url = "/avatartion.png"
+    const resume = "Ideas en soluciones funcionales. \nActualmente, formo parte de    la Secretaría de Innovación y Transformación Digital del GCBA trabajando en un producto que unifica y optimiza el acceso a datos, facilitando la consulta y el análisis de datos gubernamentales. A la par, sigo mi camino en la arquitectura ⛑️ en FADU, combinando lógica y creatividad en cada proyecto. \nDisfruto investigando nuevas tecnologías, explorando soluciones innovadoras y, en mis ratos libres, disfrutando del 🎬 cine y el arte."
 
     return (
-        <div id="aboutme" className="container-section col-12 h-xl-100 h-100 h-lg-100 d-flex flex-column align-items-start ">
-            <p >SOBRE MI |</p>
-            <div className="col-12 d-flex flex-lg-row flex-column align-items-center mt-5">
-                <div className="col-8 photo mb-lg-0 mb-5 col-sm-6">
-                    <Image
-                        src={url}
-                        layout="responsive"
-                        alt="Juan Carlos"
-                        height={300}
-                        width={200}
-                    />
-                </div>
-                {/* <div className="photo col-4"></div> */}
+        <div className="container-abt d-flex flex-column justify-content-between align-items-center col-12 p-lateral pt-5 " >
+            <div id="aboutme" className=" d-flex justify-content-between flex-lg-row flex-column ">
+                <div
+                    className="col-8 col-sm-6"
+                    style={{
+                        backgroundImage: `url(${url})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        aspectRatio: '1 / 1',
+                        borderRadius: '50%',
+                        height: '15rem',
+                        width: '15rem'
+                    }}
+                ></div>
                 <div className="col-12 col-sm-6 col-md-8 p-2 col-lg-8 p-0">
-                    {/* <p className="title">Sobre <span className="text-black-light">mí</span></p> */}
-                    <p className="description" >Hola, soy Juan Carlos, desarrollador apasionado por la tecnología y el diseño. A lo largo de mi carrera, he tenido el privilegio de formar parte de equipos multidisciplinarios que valoran tanto la creatividad como la funcionalidad.
-                        Mi enfoque se basa en combinar tecnología y diseño para crear proyectos funcionales como visualmente atractivos. En cada equipo en el que he trabajado, hemos fomentado una cultura de colaboración y creatividad, asegurando asi resultados de calidad.
-                        <br /> <span className="d-none d-md-flex ">
-                            Soy una persona curiosa y aplicada, siempre buscando superar desafíos y encontrar soluciones innovadoras. Creo firmemente en la importancia de integrar estética y funcionalidad, y me esfuerzo por garantizar que cada proyecto no solo cumpla con su propósito, sino que también ofrezca una experiencia visualmente agradable. </span>
+                    <p className="description" >
+                        {resume}
                     </p>
                 </div>
             </div>
-            {/* <p className="d-sm-flex d-md-none" >
-                <span >Soy una persona curiosa y aplicada, siempre buscando superar desafíos y encontrar soluciones innovadoras. Creo firmemente en la importancia de integrar estética y funcionalidad, y me esfuerzo por garantizar que cada proyecto no solo cumpla con su propósito, sino que también ofrezca una experiencia visualmente agradable.</span> </p> */}
+            <div className="triangle-container"
+                style={{
+                    width: '100vw',
+                    height: '10rem',
+                    clipPath: 'polygon(0 100%, 100% 0, 100% 100%)',
+                    backgroundColor: '#111111',
+                    overflow: 'hidden', // Esto es importante para que lo interno no se escape
+                }}>
+                <div className="triangle-bg"></div>
+            </div>
             <style jsx>{`
-                .photo{
-                 //background-color:var(--black-light);
-                 height:20rem;
-                 width:15rem;
-                 margin-right: 2rem
-                }
-                .container-section{
+                
+                .container-abt{
                     background-color:var(--white);
+                    height:30rem;
                 }
                 .title {
                     font-size: 16px;
@@ -57,6 +60,8 @@ const AboutMe = () => {
                     }
                 } */
             `}</style>
+
+
         </div>
     )
 }

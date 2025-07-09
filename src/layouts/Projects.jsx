@@ -5,7 +5,7 @@ import { Col, Row } from "react-bootstrap";
 
 const Projects = () => {
     return (
-        <div id="proyects" className="container-section  col-12 h-auto">
+        <div id="projects" className="container-section  col-12 h-auto">
             <p>PROYECTOS |</p>
             <div className="body">
                 <div>
@@ -31,9 +31,6 @@ const Projects = () => {
             </div>
 
             <style jsx>{`
-            .container-section {
-                background-color:var(--white);
-            }
             .container-projects button{
                 color:var(--black);
                 padding:0;
