@@ -28,19 +28,20 @@ const AboutMe = () => {
             </div>
             <div className="triangle-container"
                 style={{
+                    margin: '0 important!',
                     width: '100vw',
                     height: '10rem',
                     clipPath: 'polygon(0 100%, 100% 0, 100% 100%)',
                     backgroundColor: '#111111',
                     overflow: 'hidden', // Esto es importante para que lo interno no se escape
                 }}>
-                <div className="triangle-bg"></div>
+                <div className="bg"></div>
             </div>
             <style jsx>{`
                 
                 .container-abt{
                     background-color:var(--white);
-                    height:30rem;
+                    height:auto;
                 }
                 .title {
                     font-size: 16px;

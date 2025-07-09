@@ -16,9 +16,9 @@ const Introduce = () => {
                 </div>
                 <p className="mt-4">Mirá en qué estoy <SectionLink to='projects' >
                     <span style={{ textDecorationLine: 'underline' }}>
-                        trabajando actualmente ⟶
-                    </span>
-                </SectionLink></p>
+                        trabajando actualmente</span>
+                </SectionLink> ⟶
+                </p>
 
             </div>
             <div
@@ -31,7 +31,7 @@ const Introduce = () => {
             ></div>
             <style jsx>{`
                 .container-ntr{
-                    height:30rem;
+                    height:33rem;
                 }
                 p{
                     color:var(--white);
