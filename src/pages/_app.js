@@ -15,6 +15,7 @@ export default function MyApp({ Component, pageProps }) {
           name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
+        <meta name="google-site-verification" content="515G6e_LODRnmgbA7SIHPAvwJWUXc1eLID23GrusFTU" />
         <title>Juan Carlos Vilcherrez</title>
       </Head>
       <Component {...pageProps} />
